@@ -1,0 +1,50 @@
+DBMS MODEL LAB - EXPERIMENT 9
+NORMALIZATION USING FUNCTIONAL DEPENDENCIES
+
+AIM:
+To study normalization up to 1NF, 2NF, 3NF, 4NF and 5NF.
+
+ALGORITHM:
+1. Identify attributes and functional dependencies.
+2. Convert the relation into 1NF by removing multi-valued attributes.
+3. Convert 1NF into 2NF by removing partial dependencies.
+4. Convert 2NF into 3NF by removing transitive dependencies.
+5. Remove multi-valued and join dependencies for 4NF and 5NF.
+
+UNNORMALIZED:
+SID | NAME | COURSE | PHONE
+101 | RAVI | CSE, AI | 9876
+102 | RAJU | CSE | 8765
+103 | SITA | AI | 7654
+
+1NF:
+SID | NAME | COURSE | PHONE
+101 | RAVI | CSE | 9876
+101 | RAVI | AI | 9876
+102 | RAJU | CSE | 8765
+103 | SITA | AI | 7654
+
+2NF:
+STUDENT(SID, NAME, PHONE)
+STUDENT_COURSE(SID, COURSE)
+
+3NF:
+SID -> NAME
+SID -> PHONE
+
+4NF:
+STUDENT_COURSE(SID, COURSE)
+STUDENT_PHONE(SID, PHONE)
+
+5NF:
+Remove unnecessary join dependencies and decompose relations so joins do not create incorrect information.
+
+MEMORY:
+1NF -> Atomic values
+2NF -> No partial dependency
+3NF -> No transitive dependency
+4NF -> No multi-valued dependency
+5NF -> No join dependency
+
+RESULT:
+The relation was successfully normalized up to 5NF.

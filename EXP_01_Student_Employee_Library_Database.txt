@@ -1,0 +1,32 @@
+DBMS MODEL LAB - EXPERIMENT 1
+Creation of Database and SQL Queries
+
+1(a) STUDENT DATABASE
+AIM: To create a student database and retrieve information.
+SQL:
+CREATE TABLE STUDENT(SID NUMBER(3), NAME VARCHAR2(20), MARKS NUMBER(3));
+INSERT INTO STUDENT VALUES (101,'RAVI',85);
+INSERT INTO STUDENT VALUES (102,'RAJU',75);
+INSERT INTO STUDENT VALUES (103,'SITA',90);
+SELECT * FROM STUDENT;
+RESULT: Student database created and records retrieved successfully.
+
+1(b) EMPLOYEE DATABASE
+AIM: To create an employee database and retrieve information.
+SQL:
+CREATE TABLE EMPLOYEE(EID NUMBER(3), NAME VARCHAR2(20), SALARY NUMBER(6));
+INSERT INTO EMPLOYEE VALUES (101,'RAVI',25000);
+INSERT INTO EMPLOYEE VALUES (102,'RAJU',30000);
+INSERT INTO EMPLOYEE VALUES (103,'SITA',28000);
+SELECT * FROM EMPLOYEE;
+RESULT: Employee database created and records retrieved successfully.
+
+1(c) LIBRARY DATABASE
+AIM: To create a library database and retrieve information.
+SQL:
+CREATE TABLE LIBRARY(BOOKID NUMBER(3), TITLE VARCHAR2(20), PRICE NUMBER(5));
+INSERT INTO LIBRARY VALUES (101,'DBMS',300);
+INSERT INTO LIBRARY VALUES (102,'JAVA',250);
+INSERT INTO LIBRARY VALUES (103,'CN',280);
+SELECT * FROM LIBRARY;
+RESULT: Library database created and records retrieved successfully.
